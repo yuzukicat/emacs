@@ -425,7 +425,7 @@ whether an element was found or not."
         (setq count (+ 1 count))))
     count))
 
-(cl-defgeneric seq-contains (sequence elt &optional testfn)
+(cl-defgeneric seq-contains-p (sequence elt &optional testfn)
   "Return the first element in SEQUENCE that is \"equal\" to ELT.
 \"Equality\" is defined by the function TESTFN, which defaults to `equal'."
   (declare (obsolete seq-contains-p "27.1"))
